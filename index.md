@@ -26,7 +26,7 @@ __The University of Tennessee, Knoxville__
 ## Experience
 
 `June 2018 – Present`
-__OSIsoft, LLC - Software Developer II__
+__OSIsoft, LLC - Software Developer I/II__
 - Creates Angular UI for 3 customer-facing products
 - Builds and maintains company-wide Angular component library
 - Collaborates on UX/UI designs for new features
