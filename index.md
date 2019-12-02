@@ -26,7 +26,7 @@ __The University of Tennessee, Knoxville__
 ## Experience
 
 `June 2018 – Present`
-__OSIsoft, LLC -- Software Developer II__
+__OSIsoft, LLC - Software Developer II__
 - Creates Angular UI for 3 customer-facing products
 - Builds and maintains company-wide Angular component library
 - Collaborates on UX/UI designs for new features
@@ -34,7 +34,7 @@ __OSIsoft, LLC -- Software Developer II__
 
 
 `January 2016 – August 2017`
-__OSIsoft, LLC – Development Co-op__
+__OSIsoft, LLC - Development Co-op__
 - Developed data-analysis software for company’s community website
 - Developed and tested Angular UI for customer-facing software
 - Migrated a large section of existing code from Angular 1 to Angular 4
@@ -49,7 +49,7 @@ __Five in the Hive__ - _Personal Project_
 - Competitive fantasy sports social app
 
 `January 2018 – May 2018`
-__Teaching Assistant__ – _UT EECS Dept._
+__Teaching Assistant__ - _UT EECS Dept._
 - Lead Data Structures and Algorithms lab section of 25 students
 
 `December 2017 - February 2018`
