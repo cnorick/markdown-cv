@@ -42,7 +42,7 @@ __OSIsoft, LLC – Development Co-op__
 - Worked within team designing/writing new UI components
 
 
-## Activities/Projects
+## Activities / Projects
 
 `May 2019 - Present`
 __Five in the Hive__ - _Personal Project_
