@@ -187,6 +187,25 @@ strong {
 	display: none;
 }
 
+table {
+	position: relative;
+    left: 25%;
+    width: 66%;
+}
+
+thead {
+	font-weight: bold;
+	border-bottom: solid 1px;
+	text-align: left;
+}
+
+tbody {
+	font-size: small;
+}
+
+td {
+	padding-right: 20px;
+}
 
 
 /*
