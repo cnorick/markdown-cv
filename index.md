@@ -50,7 +50,7 @@ __Five in the Hive__ - _Personal Project_
 
 `January 2018 – May 2018`
 __Teaching Assistant__ - _UT EECS Dept._
-- Lead Data Structures and Algorithms lab section of 25 students
+- Led Data Structures and Algorithms lab section of 25 students
 
 `December 2017 - February 2018`
 __Data Scraping / Analytics__ - _UT Haslam College of Business_
