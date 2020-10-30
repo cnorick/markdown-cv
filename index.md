@@ -37,7 +37,7 @@ __OSIsoft, LLC - Software Developer I/II__
 __OSIsoft, LLC - Development Co-op__
 - Developed data-analysis software for company’s community website
 - Developed and tested Angular UI for customer-facing software
-- Migrated a large section of existing code from Angular 1 to Angular 4
+- Migrated a project from Angular 1 to Angular 4
 - Wrote UI tests using Jasmine and Angular testing tools
 - Worked within team designing/writing new UI components
 
