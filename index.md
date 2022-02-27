@@ -1,12 +1,43 @@
 ---
 layout: cv
 title: Nathan Orick's Resume
+skills:
+    - typescript
+    - javascript
+    - html
+    - css
+    - c#
+    - c
+    - c++
+    - python
+    - angular
+    - angularjs
+    - jasmine
+    - jest
+    - dotnet
+    - git
+    - aws
+    - npm
+    - webpack
+    - azure devops
+    - scrum
+    - agile
+    - sql
+    - dynamodb
+    - redis
+    - eventhub
+    - servicebus
+    - ux
+    - figma
+    - azure
+    - svelte
+    - pwa
 ---
 
 
 # Nathan Orick
 
-Software Engineer, Experienced Front-End Developer
+Senior Software Engineer, Experienced Front-End Developer
 
 <div id="webaddress">
 <a href="mailto:cnathanorick@gmail.com">cnathanorick@gmail.com</a>
@@ -26,12 +57,12 @@ __The University of Tennessee, Knoxville__
 ## Experience
 
 `June 2018 – Present`
-__OSIsoft, LLC - Software Developer I/II__
-- Creates Angular UI for 3 customer-facing products
-- Builds and maintains company-wide Angular component library
-- Collaborates on UX/UI designs for new features
+__Aveva / OSIsoft - Software Developer I/II/Sr__
+- Builds/Maintains Angular apps for multiple customer-facing products
+- Writes Azure-based microservices to support cloud applications
+- Creates UX designs and presents to stakeholders
+- Mentors interns/jr developers
 - Facilitates team learning through presentations and lunch-and-learns
-
 
 `January 2016 – August 2017`
 __OSIsoft, LLC - Development Co-op__
@@ -39,22 +70,18 @@ __OSIsoft, LLC - Development Co-op__
 - Developed and tested Angular UI for customer-facing software
 - Migrated a project from Angular 1 to Angular 4
 - Wrote UI tests using Jasmine and Angular testing tools
-- Worked within team designing/writing new UI components
-
 
 ## Activities / Projects
+`October 2020 - Present`
+__Home Assistant__ - _Open Source Contributions_
 
-`May 2019 - Present`
+`May 2019 - August 2020`
 __Five in the Hive__ - _Personal Project_
 - Competitive fantasy sports social app
 
 `January 2018 – May 2018`
 __Teaching Assistant__ - _UT EECS Dept._
 - Led Data Structures and Algorithms lab section of 25 students
-
-`December 2017 - February 2018`
-__Data Scraping / Analytics__ - _UT Haslam College of Business_
-- Created software to parse SEC business records for research project
 
 ... more projects at [nathanorick.com](https://nathanorick.com)
 
@@ -69,17 +96,12 @@ __Data Scraping / Analytics__ - _UT Haslam College of Business_
 `September 2017`
 - _VolHacks_ \| Knoxville, TN (Volunteer)
 
-`May 2017`
-- _CodeStock_ \| Knoxville, TN
+## Favorite Tech
+Angular, Typescript, Jekyll, Svelte, C# (.NET Core),
 
-`April 2017`
-- _UTK Machine Learning Hackathon_ \| Knoxville, TN (First Place)
-
-`November 2016`
-- _VandyHacks_ \| Nashville, TN (Sponsor Prize)
-
-## Technologies
-
-| Languages | Frameworks | Tooling | Databases|
-| --------- | --------- | ---------- | ------ |
-| TypeScript, JavaScript, HTML, CSS, C#, C, C++, Python | Angular/AngularJS, Jasmine, .NET | Git, Bower, AWS, Npm, Webpack, Azure DevOps, Scrum, Agile | SQL, DynamoDB |
+## (For Machines) Misc. Skills
+{% assign sortedskills = page.skills | sort %}
+{% for skill in sortedskills -%}
+    {{ skill | downcase }}
+    {%- if forloop.last == false %}, {% endif %}
+{%- endfor %}
