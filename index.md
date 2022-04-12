@@ -27,11 +27,14 @@ skills:
     - redis
     - eventhub
     - servicebus
+    - orleans
     - ux
     - figma
     - azure
     - svelte
     - pwa
+    - rest
+    - spa
 ---
 
 
@@ -97,7 +100,7 @@ __Teaching Assistant__ - _UT EECS Dept._
 - _VolHacks_ \| Knoxville, TN (Volunteer)
 
 ## Favorite Tech
-Angular, Typescript, Jekyll, Svelte, C# (.NET Core),
+Angular, Typescript, Jekyll, Svelte, C# (.NET Core)
 
 ## (For Machines) Misc. Skills
 {% assign sortedskills = page.skills | sort %}
