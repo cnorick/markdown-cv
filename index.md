@@ -4,6 +4,10 @@ title: Nathan Orick's Resume
 skills:
     - typescript
     - javascript
+    - astro
+    - solidjs
+    - nodejs
+    - nestjs
     - html
     - css
     - c#
@@ -14,9 +18,11 @@ skills:
     - angularjs
     - jasmine
     - jest
+    - playwright
     - dotnet
     - git
     - aws
+    - cloudfront
     - npm
     - webpack
     - azure devops
@@ -24,23 +30,22 @@ skills:
     - agile
     - sql
     - dynamodb
-    - redis
-    - eventhub
-    - servicebus
-    - orleans
     - ux
     - figma
     - azure
     - svelte
     - pwa
-    - rest
-    - spa
+    - core web vitals
+    - lighthouse
+    - seo
+    - mocha
+    - testing
 ---
 
 
 # Nathan Orick
 
-Senior Software Engineer, Experienced Front-End Developer
+Senior Software Engineer, Front-End Expert, Full-Stack Developer
 
 <div id="webaddress">
 <a href="mailto:cnathanorick@gmail.com">cnathanorick@gmail.com</a>
@@ -50,7 +55,7 @@ Senior Software Engineer, Experienced Front-End Developer
 
 ## Education
 
-`May 2018`
+`Graduated May 2018`
 __The University of Tennessee, Knoxville__
 
 - _Bachelor of Science in Computer Science_
@@ -59,48 +64,42 @@ __The University of Tennessee, Knoxville__
 
 ## Experience
 
-`June 2018 – Present`
-__Aveva / OSIsoft - Software Developer I/II/Sr__
-- Builds/Maintains Angular apps for multiple customer-facing products
-- Writes Azure-based microservices to support cloud applications
-- Creates UX designs and presents to stakeholders
-- Mentors interns/jr developers
-- Facilitates team learning through presentations and lunch-and-learns
+`July 2022 - Present`
+__Capital One - Senior Software Engineer (Principal Associate)__
+- Leads full-stack SEO-focused projects, delivering optimized solutions for web performance.
+- Manages and mentors cross-functional teams of developers, ensuring timely delivery of complex initiatives.
+- Serves as a subject matter expert in web performance optimization and testing strategies.
+
+`June 2018 – July 2022`
+__Aveva / OSIsoft - Software Developer (I → II → Sr)__
+- Designed, built, and maintained Angular-based applications for multiple customer-facing platforms.
+- Developed Azure-based microservices for cloud-native applications.
+- Delivered intuitive UX designs, collaborating with stakeholders to meet end-user needs.
+- Mentored interns and junior developers, fostering growth through regular sessions and knowledge sharing.
 
 `January 2016 – August 2017`
 __OSIsoft, LLC - Development Co-op__
-- Developed data-analysis software for company’s community website
-- Developed and tested Angular UI for customer-facing software
-- Migrated a project from Angular 1 to Angular 4
-- Wrote UI tests using Jasmine and Angular testing tools
+- Built data-analysis tools for the company's community portal, enhancing user insights.
+- Upgraded software components from Angular 1 to Angular 4, enhancing performance and maintainability.
+- Created and tested Angular-based UI components using Jasmine, bolstering product quality.
 
-## Activities / Projects
-`October 2020 - Present`
-__Home Assistant__ - _Open Source Contributions_
+## Certifications & Projects
 
-`May 2019 - August 2020`
-__Five in the Hive__ - _Personal Project_
-- Competitive fantasy sports social app
+`March 2023`
+__AWS Certified Solutions Architect__ - _Associate_
+- 
 
-`January 2018 – May 2018`
-__Teaching Assistant__ - _UT EECS Dept._
-- Led Data Structures and Algorithms lab section of 25 students
+`October 2022 - Present`
+__Halloween Candy Machine__ - _Software/Hardware Project_
+- A gamified candy machine that dispenses candy after trick-or-treaters spin a virtual wheel.
 
-... more projects at [nathanorick.com](https://nathanorick.com)
+`July 2023 - Present`
+__Cultivator__ - _Web Application_
+- Works with popular finance software, Tiller.
+- Lets users monitor their transactions on the go.
 
-## Hackathons / Conferences
-
-`November 2019`
-- _Angle Brackets / AngularMix_ \| Las Vegas, NV
-
-`March 2018`
-- _Lambda Squared_ \| Knoxville, TN
-
-`September 2017`
-- _VolHacks_ \| Knoxville, TN (Volunteer)
-
-## Favorite Tech
-Angular, Typescript, Jekyll, Svelte, C# (.NET Core)
+__More__
+- ... more projects at [nathanorick.com](https://nathanorick.com).
 
 ## (For Machines) Misc. Skills
 {% assign sortedskills = page.skills | sort %}
