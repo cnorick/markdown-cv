@@ -88,10 +88,8 @@ __OSIsoft, LLC - Development Co-op__
 
 ## Certifications & Projects
 
-__AWS Certified Solutions Architect__ - _Associate_
-`March 2023`
-
-- 
+__AWS Certified Solutions Architect__ - _Professional_
+`May 2025`
 
 __Halloween Candy Machine__ - _Software/Hardware Project_
 `October 2022 - Present`
