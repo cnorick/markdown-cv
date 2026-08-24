@@ -28,9 +28,6 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-ol, ul {
-	list-style: none;
-}
 blockquote, q {
 	quotes: none;
 }
@@ -47,14 +44,15 @@ table {
 /* end of reset */
 
 
-
 body {
 	font: normal normal 400;
 	font-size: 100%;
 	line-height: 1.5em;
-	/*also written as...  font: normal normal 400 100%/1.5em;*/
-	font-family: Avenir,Verdana,sans-serif;
-	width: 100vw;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Avenir, Verdana, sans-serif;
+	color: #222;
+	background-color: #fff;
+	width: 100%;
+	overflow-x: hidden;
 }
 
 #main {
@@ -68,56 +66,66 @@ body {
 #content {
 	flex-direction: column;
 	position: relative;
-	max-width: 1000px;
+	max-width: 900px;
+	width: 100%;
 }
 
 p {
 	margin-bottom: 0.7em;
 	margin-right: 0;
 	display: flex;
-	gap: 5px;
+	gap: 8px;
 	flex-wrap: wrap;
+	align-items: baseline;
+	text-wrap: pretty;
 }
 
 code {
-	font: normal normal;
-	font-size: 90%;
-	font-family: Monaco,Menlo,monospace,sans-serif;
-	color: #aaa;
-	flex: 1;
+	font-size: 88%;
+	font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+	color: #666;
+	flex: 1 1 auto;
 	text-align: right;
 	white-space: nowrap;
 }
 
 ul {
-	margin-bottom: 2em;
+	list-style-type: disc;
+	margin-left: 1.25rem;
+	margin-bottom: 1.8em;
 }
 
 li {
-	padding-left: 1.25em;
-	text-indent: -1.25em;
-	margin-top: 0.5em;
+	padding-left: 0.25rem;
+	margin-top: 0.4em;
+	line-height: 1.45em;
+	text-wrap: pretty;
 }
 
-h1,h2,h3,h4 {
-	font-weight: 400;
-	font-family: Avenir,Cousine,Verdana,sans-serif;
+h1, h2, h3, h4 {
+	font-weight: 500;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Avenir, sans-serif;
+	text-wrap: balance;
 }
 
 h1 {
 	text-align: left;
-	font-size: 3em;
-	line-height: 1em;
+	font-size: 2.75em;
+	line-height: 1.1em;
+	letter-spacing: -0.02em;
+	color: #111;
 }
 
 h1+p {
-	/*subtitle*/
 	font-style: italic;
 	font-size: 110%;
+	color: #444;
+	margin-top: 0.3em;
 }
 
 h2 {
 	font-size: 1.1em;
+	font-weight: 600;
 	color: #bc412b;
 	margin-top: 3em;
 	position: relative;
@@ -126,29 +134,47 @@ h2 {
 	width: 11rem;
 	height: 0;
 	text-align: right;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
 }
 
 h3 {
 	font-size: 1em;
-	line-height: 2em;
+	line-height: 1.8em;
 }
 
 a {
-	color: inherit;
+	color: #bc412b;
+	text-decoration: underline;
+	text-underline-offset: 2px;
+	transition: color 0.15s ease-in-out;
 }
 
 a:hover {
-	color:#39f
+	color: #0056b3;
+}
+
+a:focus-visible {
+	outline: 2px solid #bc412b;
+	outline-offset: 2px;
+	border-radius: 2px;
 }
 
 #webaddress {
 	color: #bc412b;
-	font-family: Monaco,Menlo,monospace,sans-serif;
-	font-size: 100%;
+	font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+	font-size: 95%;
+	display: inline-flex;
+	gap: 0.5rem;
+	align-items: center;
 }
 
 #webaddress a {
 	text-decoration: none;
+}
+
+#webaddress a:hover {
+	text-decoration: underline;
 }
 
 em {
@@ -156,7 +182,8 @@ em {
 }
 
 strong {
-	font-weight: bold;
+	font-weight: 600;
+	color: #111;
 }
 
 #address {
@@ -165,11 +192,12 @@ strong {
 
 table {
 	position: relative;
+	width: 100%;
 }
 
 thead {
-	font-weight: bold;
-	border-bottom: solid 1px;
+	font-weight: 600;
+	border-bottom: solid 1px #ddd;
 	text-align: left;
 }
 
@@ -179,61 +207,124 @@ tbody {
 
 td {
 	padding-right: 20px;
+	padding-top: 6px;
+	padding-bottom: 6px;
 }
 
+/* Mobile & Tablet Styles */
 @media screen and (max-width: 900px) {
 
 	#main {
-		margin-left: 3rem;
+		margin: 1.5rem 1.25rem;
+	}
+
+	#content {
+		max-width: 100%;
+	}
+
+	h1 {
+		font-size: 2.2em;
+	}
+
+	h1+p .subtitle-sep {
+		display: none;
+	}
+
+	h1+p .subtitle-part {
+		display: block;
 	}
 
 	h2 {
 		position: static;
-		height: unset;
+		height: auto;
+		width: 100%;
 		text-align: left;
+		margin-top: 2rem;
+		margin-bottom: 0.5rem;
+		padding-bottom: 0.25rem;
+		border-bottom: 1.5px solid #bc412b;
 	}	
+
+	p {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 2px;
+	}
+
+	code {
+		text-align: left;
+		white-space: normal;
+		margin-bottom: 0.3em;
+	}
+
+	ul {
+		margin-bottom: 1.4em;
+		margin-left: 1rem;
+	}
 }
 
+/* Print Stylesheet (Single-Page PDF Optimized) */
 @media print {
 	body {
-  	font-family: 'Times New Roman', serif;
-		font-size: 0.8rem;
-		line-height: 1.4em;
+		font-family: Georgia, 'Times New Roman', serif;
+		font-size: 0.78rem;
+		line-height: 1.35em;
+		color: #111;
+		background: #fff;
 	}
 
 	#main {
 		margin-top: 0;
 		margin-bottom: 0;
-		margin-right: 3rem;
+		margin-right: 1.5rem;
 		margin-left: 9rem;
 	}
 
+	h1 {
+		font-size: 1.9em;
+		line-height: 1em;
+		color: #000;
+	}
+
+	h1+p {
+		font-size: 100%;
+		color: #333;
+	}
+
 	p {
-		margin-bottom: 0.2em;
+		margin-bottom: 0.15em;
 		margin-right: 0;
+		text-wrap: pretty;
 	}
 
 	code {
-		font: normal normal;
-		font-size: 90%;
-		font-family: Monaco,Menlo,monospace,sans-serif;
-		color: #ccc;
+		font-size: 88%;
+		font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+		color: #555;
 	}
 
 	ul {
-		position: relative;
-		margin-bottom: 1.2rem;
+		list-style-type: disc;
+		margin-left: 1rem;
+		margin-bottom: 0.45rem;
 	}
 
 	li {
-		line-height: unset;
+		padding-left: 0.15rem;
+		line-height: 1.3em;
+		margin-top: 0.2em;
+		text-wrap: pretty;
+		break-inside: avoid;
 	}
 
 	h2 {
-		color: #a00;
-		margin-top: 3em;
+		color: #900;
+		margin-top: 0.9em;
 		left: -9rem;
-		width: 7rem;
+		width: 7.5rem;
+		font-size: 0.9em;
+		text-transform: uppercase;
+		letter-spacing: 0.03em;
 	}
 
 	a {
@@ -242,11 +333,15 @@ td {
 	}
 
 	#webaddress {
-		color: #ccc;
-		font-size: 90%;
+		color: #555;
+		font-size: 88%;
 	}
 
 	em {
-		color: #2d4e5e
+		color: #2d4e5e;
+	}
+
+	strong {
+		color: #000;
 	}
 }
